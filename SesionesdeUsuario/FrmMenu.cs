@@ -12,9 +12,26 @@ namespace SesionesdeUsuario
 {
     public partial class FrmMenu : Form
     {
+        public string usuario;
         public FrmMenu()
         {
             InitializeComponent();
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Text = usuario;
+
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+
+            login.Show();
+
+            this.Close();
+
         }
     }
 }

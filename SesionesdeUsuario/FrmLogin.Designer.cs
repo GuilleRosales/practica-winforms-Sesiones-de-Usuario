@@ -34,6 +34,7 @@
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             // 
             this.txtContrasena.Location = new System.Drawing.Point(97, 425);
             this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(174, 20);
             this.txtContrasena.TabIndex = 2;
             // 
@@ -84,6 +86,17 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña:";
             // 
+            // btnLogin
+            // 
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogin.Location = new System.Drawing.Point(139, 512);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +105,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(373, 610);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContrasena);
@@ -116,6 +130,7 @@
         private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

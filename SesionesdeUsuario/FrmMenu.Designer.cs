@@ -28,19 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(350, 147);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(37, 13);
+            this.lblUsuario.TabIndex = 0;
+            this.lblUsuario.Text = "button";
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Location = new System.Drawing.Point(324, 318);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrarSesion.TabIndex = 1;
+            this.btnCerrarSesion.Text = "button1";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrarSesion);
+            this.Controls.Add(this.lblUsuario);
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }
